@@ -9,7 +9,7 @@ development environment.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;In the Google Cloud console, on the project selector page, select or
-&lt;a href="https://cloud.google.com/resource-manager/docs/creating-managing-projects"&gt;create a Google Cloud project&lt;/a&gt;.&lt;/p&gt;
+&lt;a href="https://docs.cloud.google.com/resource-manager/docs/creating-managing-projects"&gt;create a Google Cloud project&lt;/a&gt;.&lt;/p&gt;
 &lt;blockquote class='book-hint note'&gt;
 &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; If you don&amp;rsquo;t already have a project to use for testing changes to
 the Terraform providers, create a project instead of selecting an existing
@@ -79,7 +79,7 @@ additional work to implement.&lt;/p&gt;</description></item><item><title>Add IAM
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#e2e4e5;background-color:#282a36;-moz-tab-size:2;-o-tab-size:2;tab-size:2;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;go get google.golang.org/api@v0.105.0 
 &lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;go mod tidy&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
-&lt;li&gt;Copy the contents of the updated &lt;code&gt;go.mod&lt;/code&gt; and &lt;code&gt;go.sum&lt;/code&gt; file into &lt;a href="https://github.com/GoogleCloudPlatform/magic-modules/blob/main/mmv1/third_party/terraform/go.mod.erb"&gt;&lt;code&gt;mmv1/third_party/terraform/go.mod&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/GoogleCloudPlatform/magic-modules/blob/main/mmv1/third_party/terraform/go.sum"&gt;&lt;code&gt;mmv1/third_party/terraform/go.sum&lt;/code&gt;&lt;/a&gt; in the &lt;code&gt;magic-modules&lt;/code&gt; respectively.&lt;/li&gt;
+&lt;li&gt;Copy the contents of the updated &lt;code&gt;go.mod&lt;/code&gt; and &lt;code&gt;go.sum&lt;/code&gt; file into &lt;a href="https://github.com/GoogleCloudPlatform/magic-modules/blob/main/mmv1/third_party/terraform/go.mod"&gt;&lt;code&gt;mmv1/third_party/terraform/go.mod&lt;/code&gt;&lt;/a&gt; and &lt;a href="https://github.com/GoogleCloudPlatform/magic-modules/blob/main/mmv1/third_party/terraform/go.sum"&gt;&lt;code&gt;mmv1/third_party/terraform/go.sum&lt;/code&gt;&lt;/a&gt; in the &lt;code&gt;magic-modules&lt;/code&gt; respectively.&lt;/li&gt;
 &lt;li&gt;Create a pull request containing &lt;em&gt;only&lt;/em&gt; the dependency changes.&lt;/li&gt;
 &lt;li&gt;Resolve any errors caused by the dependency upgrade.&lt;/li&gt;
 &lt;li&gt;After the dependency pull request is merged, continue with a separate pull request for any additional changes that were blocked by the upgrade.&lt;/li&gt;
